@@ -1,8 +1,19 @@
 
 # Added by me
 
+## Output files
 *.pdf
+*.css
+*.html
 
+## Weird htlatex files
+*.4tc
+*.tmp
+*.xref
+*.4ct
+*.dvi
+*.idv
+*.lg
 
 # Created by https://www.gitignore.io/api/latex,tex
 
