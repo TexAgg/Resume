@@ -195,7 +195,9 @@
 \DeclareOption{line}{\@linetrue}
 \DeclareOption{centered}{\@linefalse}
 
-\DeclareOption{margin}{\@margintrue}
+% Avoid conflict with geometry margin
+% http://tex.stackexchange.com/a/154148/89290
+\DeclareOption{resmargin}{\@margintrue}
 \DeclareOption{overlapped}{\@marginfalse}
 
 \ExecuteOptions{overlapped,centered}
@@ -779,15 +781,17 @@
 \textheight 9in
 \parindent 0pt
 \topmargin 0in
-\oddsidemargin 0pt
-\evensidemargin 0pt
+% http://latex-community.org/forum/viewtopic.php?f=62&t=25844&sid=172a467cb0a9508572d51cb04a60102f
+\oddsidemargin -10pt
+\evensidemargin -10pt
 \marginparwidth 0pt
 \parindent 0pt
 \parskip \baselineskip
 \setcounter{secnumdepth}{0}
 \def\@listI{\leftmargin\leftmargini
 \topsep 0pt 
-\parskip 0pt
+% Less space between sections.
+\parskip -1pt
 \partopsep 2pt plus 2pt
 \parsep 2pt plus 2pt
 \itemsep \parsep}

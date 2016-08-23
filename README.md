@@ -19,3 +19,8 @@ make
 ```
 make web
 ```
+
+---
+
+## Resources
+* [margin](http://tex.stackexchange.com/a/43205/89290)
