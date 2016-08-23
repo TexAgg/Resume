@@ -1,7 +1,6 @@
 TEXFILE=main
-CLASS=res.cls
 
-$(TEXFILE).pdf: $(TEXFILE).tex $(CLASS)
+$(TEXFILE).pdf: $(TEXFILE).tex
 	pdflatex $(TEXFILE).tex
 
 web:

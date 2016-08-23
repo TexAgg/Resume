@@ -1,137 +1,133 @@
-% Resume for Matt Gaikema
-% Follows the res2 template found at https://www.rpi.edu/dept/arc/training/latex/resumes/
-% This file uses the resume document class (res.cls).
-% Another example using the res.cls is found here: https://www.overleaf.com/articles/jteppinette-resume/wcsdpbkfmstz
+\documentclass[10pt,a4paper]{moderncv}
+\usepackage[utf8]{inputenc}
+% http://tex.stackexchange.com/a/39030/89290
+\usepackage[scale=0.8, top=2cm, left=2cm, right=2cm, bottom=2cm]{geometry}
+\moderncvtheme[black]{banking}
+% http://tex.stackexchange.com/a/191768/89290
+\nopagenumbers
 
-\documentclass[resmargin, line]{res} 
-% The margin option causes section titles to appear to the left of body text 
-\textwidth=5.5in % increase textwidth to get smaller right margin
-% http://tex.stackexchange.com/a/43205/89290
-\topmargin=-0.5in
-\oddsidemargin -.5in
-\evensidemargin -.5in
-\textwidth=6.0in
-\itemsep=0in
-\parsep=0in
-% http://tex.stackexchange.com/a/10190/89290
-\addtolength{\textheight}{.5in}
+\firstname{Matt}
+\familyname{Gaikema}
+\address{22619 Arbor Stream Dr}{77450 Katy, Tx}
+\mobile{(832)-683-9857}
+\email{mgaikema1@gmail.com}
+\homepage{www.mattgaikema.com}
+\extrainfo{https://github.com/TexAgg}
 
-\usepackage[colorlinks = true,
-            linkcolor = blue,
-            urlcolor  = blue,
-            citecolor = blue,
-            anchorcolor = blue]{hyperref}
-\usepackage{helvet}
-%\usepackage[bottom=0.5in]{geometry}
+\begin{document}
+\vspace*{-2\baselineskip}
+\makecvtitle
+\vspace*{-2\baselineskip}
 
-%\setlength{\textwidth}{5.1in}
-
-\begin{document} 
- 
-% My name at the top
-%\moveleft.5\hoffset\centerline{\large\bf Matt Gaikema}
-\name{Matt Gaikema}
-% Horizontal line across top
-%\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
- 
-\address{22619 Arbor Stream Dr. 
-\\ Katy, TX 77450 \\ (832)-683-9857}
-
-\address{\href{www.mattgaikema.com}{mattgaikema.com} \\
-\href{https://github.com/TexAgg}{github.com/TexAgg} \\
-\href{mailto:mgaikema1@gmail.com}{mgaikema1@gmail.com}}
-
- 
-\begin{resume} 
 
 %%%%%%%%%%%%%
 % EDUCATION %
 %%%%%%%%%%%%%
 
 \section{Education}
-{\bf Texas A\&M University} \\
-Bachelor of Science in Computer Science and Applied Mathematics \\
-University Honors Fellow at Texas A\&M University \\
-Expected Graduation: May 2018 \\ 
-GPA 3.75
+\cventry{2014-2018}{Bachelor of Science in Computer Science and Applied Mathematics}{Texas A\&M University}{College Station, Tx}{3.75/4.0}{University Honors Fellow}
 
-%%%%%%%%%%%%%%
-% EXPERIENCE %
-%%%%%%%%%%%%%%
+\vspace*{-1\baselineskip}
 
-\section{Experience}
-{\bf  Department of Computer Science,} Texas A\&M University \hfill 2016---Present
-\begin{itemize} \itemsep -2pt
-    \item[] {\bf Peer Teacher}
-    \item Mentor and tutor students in computer science
-    \item Help them debug and analyze their C++ programs
-\end{itemize}
 
-{\bf Department of Mathematics,} Texas A\&M University
-\begin{itemize} \itemsep -2pt  % reduce space between items
-    \item[] {\bf Research Assistant} \hfill Summer 2015, 2016
-    \item Analyzed sound quality of vinyls from before and after
-    RIAA standardization (2015)
-    \item Research involving transpositions and
-    the conjugacy classes of symmetric groups (2016)
-    \item Wrote a program to compute the entries and eigensystem of the integer partition matrix
+%%%%%%%%%%%%%%%%%%%
+% WORK EXPERIENCE %
+%%%%%%%%%%%%%%%%%%%
 
-    \item[] {\bf Student Assistant} \hfill 2015---Present
-    \item Graded homework and exams for multivariate calculus class of over 90 students
+\section{Work Experience}
 
-    \item[] {\bf SMaRT Camp Counselor} \hfill Summer 2016
-    \item  Counselor at a two-week math camp for gifted high school students \\ from around the country
-    \item Taught students how to make formal proofs \\ and introduced them to advanced mathematics topics
-\end{itemize}
+\cventry{2016---Present}{Peer Teacher}{Departament of Computer Science}{Texas A\&M University}{}{
+    \begin{itemize}
+        \item Mentor and tutor students in computer science
+        \item Help them debug and analyze their C++ programs
+    \end{itemize}
+}
+\cventry{2015---Present}{Research Assistant}{Departament of Mathematics}{Texas A\&M University}{}{
+    \begin{itemize}
+        \item Analyzed sound quality of vinyls from before and after
+        RIAA standardization (2015)
+        \item Research involving transpositions and
+        the conjugacy classes of symmetric groups (2016)
+        \item Wrote a program to compute the entries and eigensystem of the integer partition matrix
+    \end{itemize}
+}
+\cventry{2015---Present}{Student Assistant}{Departament of Mathematics}{Texas A\&M University}{}
+{
+    \begin{itemize}
+        \item Graded homework and exams for multivariate calculus class of over 90 students
+    \end{itemize}
+}
+\cventry{2016}{SMaRT Camp Councelor}{Departament of Mathematics}{Texas A\&M University}{}{
+    \begin{itemize}
+        \item  Counselor at a two-week math camp for gifted high school students \\ from around the country
+        \item Taught students how to make formal proofs \\ and introduced them to advanced mathematics topics
+    \end{itemize}
+}
+
+\vspace*{-1\baselineskip}
+
 
 %%%%%%%%%%%%%%
 % ACTIVITIES %
 %%%%%%%%%%%%%%
 
-\section{Extracurricular Activities} 
-{\bf Webmaster,} Math Club \hfill 2016---Present
-\begin{itemize} \itemsep -2pt
-    \item Created Math Club website from scratch, using PHP
-    \item Maintain and update website, and communicate upcoming events
-\end{itemize}
+\section{Extracurricular Activities}
 
-{\bf Member,} Aggie Coding Club \hfill 2016---Present
-\begin{itemize} \itemsep -2pt
-    \item One of the developers for the original website 
-    \item Created the information page
-\end{itemize}
+\cventry{2016}{Webmaster}{Math Club}{}{}{
+    \begin{itemize}
+        \item Created Math Club website from scratch, using PHP
+        \item Maintain and update website, and communicate upcoming events
+    \end{itemize}
+}
+\cventry{2016}{Member}{Aggie Coding Club}{}{}{
+    \begin{itemize}
+        \item One of the developers for the original website 
+        \item Created the information page
+    \end{itemize}
+}
+\cventry{2014}{participant}{Champe-Fitzhugh International Honors Leadership Seminar}{Texas A\&M University}{}{
+    \begin{itemize}
+        \item Selected as part of a competitive process to be one of 30 incoming Texas A\&M student participants
+        \item Traveled throughout Italy and attended lectures and tours on Italian art, architecture, and culture
+    \end{itemize}
+}
 
-{\bf Champe-Fitzhugh International Honors Leadership Seminar} \hfill July, 2014
-\begin{itemize} \itemsep -2pt
-    \item Selected as part of a competitive process to be one of 30 incoming Texas A\&M student participants
-    \item Traveled throughout Italy and attended lectures and tours on Italian art, architecture, and culture
-\end{itemize}
+\vspace*{-1\baselineskip}
+
 
 %%%%%%%%%%
 % HONORS %
 %%%%%%%%%%
 
-\section{Academic \\ Honors} 
-National Merit Scholar \\
-President's Endowed Scholarship \\
-Member of Pi Mu Epsilon (Math Honor Society) \\
-Honors in Mathematics and Engineering \\
-MathFest
-\begin{itemize}
-    \item One of two students selected by Math Honors faculty \\ to attend national math conference, with all expenses paid
-\end{itemize}
+\section{Honors and Awards}
+\vspace*{-1\baselineskip}
+% National Merit Scholar
+\cventry{}{National Merit Scholar}{}{}{}{}
+\vspace*{-1.5\baselineskip}
+% PES
+\cventry{}{President's Endowed Scholarship}{}{}{}{}
+\vspace*{-1.5\baselineskip}
+% PME
+\cventry{}{Member of Pi Mu Epsilon (Math Honor Society)}{}{}{}{}
+\vspace*{-1.5\baselineskip}
+% Honors student
+\cventry{}{Honors in Mathematics and Engineering}{}{}{}{}
+\vspace*{-1.5\baselineskip}
+\cventry{2015}{MathFest}{}{}{}{
+    \begin{itemize}
+        \item One of two students selected by Math Honors faculty \\ to attend national math conference, with all expenses paid
+    \end{itemize}
+}
+
+\vspace*{-1\baselineskip}
+
 
 %%%%%%%%%%
 % SKILLS %
 %%%%%%%%%%
 
-% Tabulate Computer Skills; p{3in} defines paragraph 3 inches wide
-\section{Computer \\ Skills}
-\begin{tabular}{l p{3in}}
-\underline{Languages:} & C++, Java, R, Mathematica, 
-Javascript, PHP, C\#, Python, \LaTeX \\
-\underline{Software:} &  NodeJS, CMake, Git, Linux
-\end{tabular}
+\section{Skills}
+\cvcomputer{Languages}{C++, Java, R, Mathematica, Javascript, PHP, C\#, Python, \LaTeX}{}{}
+\cvcomputer{Software}{NodeJS, CMake, Git, Linux}{}{}
 
-\end{resume} 
-\end{document} 
+\end{document}
