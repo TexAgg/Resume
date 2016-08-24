@@ -3,7 +3,7 @@ TEXFILE=main
 $(TEXFILE).pdf: $(TEXFILE).tex
 	pdflatex $(TEXFILE).tex
 
-web:
+web: $(TEXFILE).tex
 	htlatex $(TEXFILE).tex
 
 .PHONY: clean
