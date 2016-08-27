@@ -5,7 +5,8 @@ Uses the [moderncv](https://vic.demuzere.be/articles/curriculum-vitae-cv-with-la
 ---
 
 ## Building
-Requires GNU Make and LaTeX.
+Requires [GNU Make](https://www.gnu.org/software/make/) and
+[pdfLaTeX](http://tex.stackexchange.com/questions/49569/where-to-download-pdflatex-exe).
 
 ### PDF
 
@@ -17,6 +18,12 @@ make
 
 ```
 make web
+```
+
+### png
+
+```
+make png
 ```
 
 ---

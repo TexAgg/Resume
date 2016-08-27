@@ -5,6 +5,7 @@
 *.pdf
 *.css
 *.html
+*.png
 
 ## Weird htlatex files
 *.4tc
