@@ -1,11 +1,11 @@
-TEXFILE=main
+RESUME=resume
 
 # Make everything.
 .PHONY: all
-all: $(TEXFILE).pdf png
+all: $(RESUME).pdf png
 
-$(TEXFILE).pdf: $(TEXFILE).tex
-	pdflatex $(TEXFILE).tex
+$(RESUME).pdf: $(RESUME).tex
+	pdflatex $(RESUME).tex
 
 .PHONY: clean
 clean:
@@ -13,11 +13,11 @@ clean:
 
 # View pdf.
 .PHONY: view
-view: $(TEXFILE).pdf
-	evince $(TEXFILE).pdf
+view: $(RESUME).pdf
+	evince $(RESUME).pdf
 
 # Use poppler-utils to convert the pdf to png.
 # http://askubuntu.com/a/50180/574988
 .PHONY: png
-png: $(TEXFILE).pdf
-	pdftoppm -png $(TEXFILE).pdf $(TEXFILE)
+png: $(RESUME).pdf
+	pdftoppm -png $(RESUME).pdf $(RESUME)
