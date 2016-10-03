@@ -22,7 +22,7 @@ $(RESUME).pdf: $(RESUME).tex
 # http://askubuntu.com/a/50180/574988
 .PHONY: resume_png
 resume_png: $(RESUME).pdf
-	pdftoppm -png $(RESUME).pdf $(RESUME)
+	pdftoppm -png $(RESUME).pdf > $(RESUME).png
 
 # View the resume pdf.
 .PHONY: view_resume
@@ -41,9 +41,10 @@ $(CV).pdf: $(CV).tex
 	pdflatex $(CV).tex
 
 .PHONY: cv_png
-# Make the cv pngs.
+# Make the cv png.
+# http://superuser.com/a/185897
 cv_png: $(CV).pdf
-	pdftoppm -png $(CV).pdf $(CV)
+	pdftoppm -png $(CV).pdf > $(CV).png
 
 .PHONY: view_cv
 # View the cv.
