@@ -47,7 +47,7 @@ $(CV).pdf: $(CV).tex
 # http://superuser.com/a/185897
 cv_png: $(CV).pdf
 	pdftoppm -png $(CV).pdf $(CV)
-	convert -append $(CV)-1.png $(CV)-2.png $(CV).png
+	python concat.py
 
 .PHONY: view_cv
 # View the cv.
