@@ -1,30 +1,19 @@
 # Resume
-My resume.
+My resume and cv.
 Uses the [moderncv](https://vic.demuzere.be/articles/curriculum-vitae-cv-with-latex-moderncv/) template
 
 ---
 
 ## Building
-Requires [GNU Make](https://www.gnu.org/software/make/) and
+Requires [GNU Make](https://www.gnu.org/software/make/), poppler-utils,
+ImageMagick, Python 2, and
 [pdfLaTeX](http://tex.stackexchange.com/questions/49569/where-to-download-pdflatex-exe).
 
-### PDF
-
+Run 
 ```
 make
 ```
-
-### HTML/CSS
-
-```
-make web
-```
-
-### png
-
-```
-make png
-```
+to make all the targets.
 
 ---
 
