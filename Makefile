@@ -42,9 +42,12 @@ $(CV).pdf: $(CV).tex
 
 .PHONY: cv_png
 # Make the cv png.
+# Make the two pages and append them vertically.
+# http://stackoverflow.com/a/31657055/5415895
 # http://superuser.com/a/185897
 cv_png: $(CV).pdf
-	pdftoppm -png $(CV).pdf > $(CV).png
+	pdftoppm -png $(CV).pdf $(CV)
+	convert -append $(CV)-1.png $(CV)-2.png $(CV).png
 
 .PHONY: view_cv
 # View the cv.
