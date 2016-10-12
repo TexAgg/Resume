@@ -14,8 +14,3 @@ Run
 make
 ```
 to make all the targets.
-
----
-
-## Resources
-* [margin](http://tex.stackexchange.com/a/43205/89290)
