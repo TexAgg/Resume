@@ -5,7 +5,8 @@ import glob
 import os
 
 # Get all files of the form 'cv-*.png'.
-# http://regexr.com/
 blocks = glob.glob('cv-*.png')
-#print ' '.join(blocks)
+print('Appending PNGs')
+# Append the files via imagemagick.
 os.system("convert -append " + ' '.join(blocks) + " cv.png")
+print('Done')
