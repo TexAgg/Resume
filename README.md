@@ -1,6 +1,8 @@
 # Resume
 My resume and cv.
-Uses the [moderncv](https://vic.demuzere.be/articles/curriculum-vitae-cv-with-latex-moderncv/) template
+Uses the [moderncv](https://vic.demuzere.be/articles/curriculum-vitae-cv-with-latex-moderncv/) template.
+
+In the future, I will use [Jinja2](http://jinja.pocoo.org/docs/dev/) for more easily templating my resume and cv.
 
 ---
 
