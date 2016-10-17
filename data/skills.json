@@ -1,0 +1,22 @@
+{
+	"languages": [
+		"C++",
+		"Mathematica",
+		"C\\#",	
+		"Java",
+		"R",
+		"JavaScript",
+		"PHP",
+		"Python",
+		"\\LaTeX",
+		"Haskell"
+	],
+	"software": [
+		"NodeJS",
+		"CMake",
+		"Git",
+		"Linux",
+		"ASP.NET MVC",
+		"Flask"
+	]
+}
