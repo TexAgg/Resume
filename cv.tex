@@ -55,8 +55,16 @@
 %%%%%%%%%%
 
 \section{Computer Skills}
-\cvitem{Languages}{C++, Mathematica, \LaTeX, Java, R, Javascript, PHP, C\#, Python, Haskell}
-\cvitem{Software}{NodeJS, CMake, Git, Linux, ASP.NET MVC, Flask}
+\cvitem{Languages}{
+\BLOCK{ for language in languages }
+    \VAR{language},
+\BLOCK{ endfor }
+}
+\cvitem{Software}{
+\BLOCK{ for s in software }
+    \VAR{s},
+\BLOCK{ endfor }
+}
 %\cvline{Passed Actuarial Exam P}{Scored 6/10}
 
 

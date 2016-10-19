@@ -1,11 +1,16 @@
 
 # Added by me
 
+build/
+
 ## Output files
 *.pdf
 *.css
 *.html
 *.png
+
+## Python
+*.pyc
 
 ## Weird htlatex files
 *.4tc
