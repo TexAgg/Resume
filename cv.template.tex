@@ -55,16 +55,8 @@
 %%%%%%%%%%
 
 \section{Computer Skills}
-\cvitem{Languages}{
-\BLOCK{ for language in languages }
-    \VAR{language},
-\BLOCK{ endfor }
-}
-\cvitem{Software}{
-\BLOCK{ for s in software }
-    \VAR{s},
-\BLOCK{ endfor }
-}
+\cvitem{Languages}{\VAR{", ".join(languages)}}
+\cvitem{Software}{\VAR{", ".join(software)}}
 %\cvline{Passed Actuarial Exam P}{Scored 6/10}
 
 

@@ -1,4 +1,6 @@
+# Uses the tutorial at
 # http://eosrei.net/articles/2015/11/latex-templates-python-and-jinja2-generate-pdfs
+# to template the resume and cv.
 
 import jinja2
 import os
@@ -16,6 +18,7 @@ latex_jinja_env = jinja2.Environment(
     variable_end_string = '}',
     comment_start_string = '\#{',
     comment_end_string = '}',
+    line_statement_prefix = "-%",
     line_comment_prefix = '%#',
     trim_blocks = True,
     autoescape = False,
@@ -29,8 +32,10 @@ resume_template = latex_jinja_env.get_template('resume.template.tex')
 resume_str = resume_template.render(languages = skills['languages'], software = skills['software'])
 with open("resume.tex", "w+") as f:
     f.write(resume_str)
+print("resume.tex written.")
 
 cv_template = latex_jinja_env.get_template('cv.template.tex')
 cv_str = cv_template.render(languages = skills['languages'], software = skills['software'])
 with open("cv.tex", "w+") as f:
     f.write(cv_str)
+print("cv.tex written.")

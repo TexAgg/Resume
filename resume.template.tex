@@ -56,16 +56,8 @@ To obtain a Summer 2017 Internship in Software Engineering.
 
 \section{Skills}
 % http://tex.stackexchange.com/questions/95045/how-to-prevent-breaklines-inside-cvcomputer-in-moderncv
-\cvitem{Languages}{
-\BLOCK{ for language in languages }
-    \VAR{language},
-\BLOCK{ endfor }
-}
-\cvitem{Software}{
-\BLOCK{ for s in software }
-    \VAR{s},
-\BLOCK{ endfor }
-}
+\cvitem{Languages}{\VAR{", ".join(languages)}}
+\cvitem{Software}{\VAR{", ".join(software)}}
 \cvline{Passed Actuarial Exam P}{Scored 6/10}
 
 \vspace*{-1\baselineskip}

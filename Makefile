@@ -65,4 +65,4 @@ view_cv: $(CV).pdf
 .PHONY: clean
 # Remove output files.
 clean:
-	rm -rf *.aux *.out *.log $(CV)-*.png *.pyc $(RESUME).tex $(CV).tex
+	rm -rf *.aux *.out *.log $(CV)-*.png *.pyc
