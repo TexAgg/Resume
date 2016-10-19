@@ -1,5 +1,6 @@
 RESUME=resume
 CV=cv
+DATA=data/skills.json
 
 # Make everything.
 .PHONY: all
@@ -9,6 +10,9 @@ all: resume cv
 ##########
 # RESUME #
 ##########
+
+$(RESUME).tex: $(RESUME).template.tex $(DATA)
+	python render.py
 
 .PHONY: resume
 # The resume target consists of the pdf and a png.
@@ -32,6 +36,9 @@ view_resume: $(RESUME).pdf
 ######
 # CV #
 ######
+
+$(CV).tex: $(CV).template.tex $(DATA)
+	python render.py
 
 .PHONY: cv
 cv: $(CV).pdf cv_png
@@ -58,4 +65,4 @@ view_cv: $(CV).pdf
 .PHONY: clean
 # Remove output files.
 clean:
-	rm -rf *.aux *.out *.log $(CV)-*.png *.pyc
+	rm -rf *.aux *.out *.log $(CV)-*.png *.pyc $(RESUME).tex $(CV).tex

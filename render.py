@@ -9,8 +9,6 @@ def get_skills():
     f = open("data/skills.json")
     return json.load(f)
 
-build_dir = "build/"
-
 latex_jinja_env = jinja2.Environment(
     block_start_string = '\BLOCK{',
     block_end_string = '}',
@@ -27,16 +25,12 @@ latex_jinja_env = jinja2.Environment(
 # Get my skills.
 skills = get_skills()
 
-# Make build directory.
-if not os.path.exists(build_dir):
-    os.makedirs(build_dir)
-
-resume_template = latex_jinja_env.get_template('resume.tex')
+resume_template = latex_jinja_env.get_template('resume.template.tex')
 resume_str = resume_template.render(languages = skills['languages'], software = skills['software'])
-with open(build_dir + "resume.tex", "w+") as f:
+with open("resume.tex", "w+") as f:
     f.write(resume_str)
 
-cv_template = latex_jinja_env.get_template('cv.tex')
+cv_template = latex_jinja_env.get_template('cv.template.tex')
 cv_str = cv_template.render(languages = skills['languages'], software = skills['software'])
-with open(build_dir + "cv.tex", "w+") as f:
+with open("cv.tex", "w+") as f:
     f.write(cv_str)

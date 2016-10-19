@@ -1,7 +1,8 @@
 
 # Added by me
 
-build/
+cv.tex
+resume.tex
 
 ## Output files
 *.pdf
