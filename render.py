@@ -45,7 +45,7 @@ latex_jinja_env = jinja2.Environment(
 # Get my skills.
 skills = get_skills()
 
-resume_template = latex_jinja_env.get_template('resume.template.tex')
+resume_template = latex_jinja_env.get_template('templates/resume.template.tex')
 resume_str = resume_template.render(
     languages = skills['languages'], 
     software = skills['software'],
@@ -56,7 +56,7 @@ with open("resume.tex", "w+") as f:
     f.write(resume_str)
 print("resume.tex written.")
 
-cv_template = latex_jinja_env.get_template('cv.template.tex')
+cv_template = latex_jinja_env.get_template('templates/cv.template.tex')
 cv_str = cv_template.render(
     languages = skills['languages'], 
     software = skills['software'],

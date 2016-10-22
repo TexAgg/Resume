@@ -11,7 +11,7 @@ all: resume cv
 # RESUME #
 ##########
 
-$(RESUME).tex: $(RESUME).template.tex $(DATA)
+$(RESUME).tex: templates/$(RESUME).template.tex $(DATA)
 	python render.py
 
 .PHONY: resume
@@ -38,7 +38,7 @@ view_resume: $(RESUME).pdf
 # CV #
 ######
 
-$(CV).tex: $(CV).template.tex $(DATA)
+$(CV).tex: templates/$(CV).template.tex $(DATA)
 	python render.py
 
 .PHONY: cv
