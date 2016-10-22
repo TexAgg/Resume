@@ -33,6 +33,7 @@ resume_png: $(RESUME).pdf
 view_resume: $(RESUME).pdf
 	evince $(RESUME).pdf
 
+
 ######
 # CV #
 ######

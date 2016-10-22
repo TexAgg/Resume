@@ -1,0 +1,54 @@
+[
+	{
+		"number": "Stat 211\\&212",
+		"title": "Principles of Statistics I\\&II"
+	},
+	{
+		"number": "CSCE 221",
+		"title": "Data Structures and Algorithms"
+	},
+	{
+		"number": "Math 308",
+		"title": "Differential Equations"
+	},
+	{
+		"number": "Math 323",
+		"title": "Linear Algebra"
+	},
+	{
+		"number": "CSCE 312",
+		"title": "Computer Organization"
+	},
+	{
+		"number": "CSCE 314",
+		"title": "Programming Languages"
+	},
+	{
+		"number": "Math 409",
+		"title": "Advanced Calculus"
+	},
+	{
+		"number": "Math 411",
+		"title": "Math Probability"
+	},
+	{
+		"number": "Math 415\\&416",
+		"title": "Modern Algebra I\\&II"
+	},
+	{
+		"number": "Math 407",
+		"title": "Complex Variables"
+	},
+	{
+		"number": "Math 414",
+		"title": "Fourier Series and Wavelets"
+	},
+	{
+		"number": "Math 442",
+		"title": "Math Modeling"
+	},
+	{
+		"number": "Math 470",
+		"title": "Cryptography"
+	}
+]

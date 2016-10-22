@@ -35,19 +35,9 @@
 {University Honors Fellow}
 \cvitem{Courses}{
     \begin{itemize}
-        \item Stat 211\&212: Principles of Statistics I\&II
-        \item CSCE 221: Data Structures and Algorithms
-        \item Math 308: Differential Equations
-        \item Math 323: Linear Algebra
-        \item CSCE 312: Computer Organization
-        \item CSCE 314: Programming Languages
-        \item Math 409: Advanced Calculus
-        \item Math 411: Math Probability
-        \item Math 415\&416: Modern Algebra I\&II
-        \item Math 407: Complex Variables
-        \item Math 414: Fourier Series and Wavelets
-        \item Math 442: Math Modeling
-        \item Math 470: Cryptography
+    \BLOCK{for course in courses}
+        \item \VAR{course['number']}: \VAR{course['title']}
+    \BLOCK{ endfor }
     \end{itemize}
 }
 

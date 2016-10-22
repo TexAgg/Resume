@@ -23,6 +23,10 @@ def get_skills():
     f = open("data/skills.json")
     return json.load(f)
 
+def get_courses():
+    f = open("data/courses.json")
+    return json.load(f)
+
 # http://jinja.pocoo.org/docs/dev/api/
 latex_jinja_env = jinja2.Environment(
     block_start_string = '\BLOCK{',
@@ -57,6 +61,7 @@ cv_str = cv_template.render(
     languages = skills['languages'], 
     software = skills['software'],
     about = get_about(),
+    courses = get_courses(),
     today = today
 )
 with open("cv.tex", "w+") as f:
