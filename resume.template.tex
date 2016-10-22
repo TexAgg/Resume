@@ -12,14 +12,13 @@ http://tex.stackexchange.com/a/68797/89290
 {# http://tex.stackexchange.com/a/191768/89290 #}
 \nopagenumbers
 
-\firstname{Matt}
-\familyname{Gaikema}
-\address{22619 Arbor Stream Dr}{77450 Katy, Tx}
-\mobile{(832)-683-9857}
-\email{mgaikema1@gmail.com}
-\homepage{www.mattgaikema.com}
-\social[github]{TexAgg}
-{#\social[linkedin]{matthew-gaikema}#}
+\firstname{\VAR{about['name']['firstname']}}
+\familyname{\VAR{about['name']['familyname']}}
+\address{\VAR{about['address']['street']}}{\VAR{['address']['city']}}
+\mobile{\VAR{about['mobile']}}
+\email{\VAR{about['email']}}
+\homepage{\VAR{about['homepage']}}
+\social[github]{\VAR{about['github']['profile']}}
 
 \begin{document}
 \vspace*{-2\baselineskip}
@@ -145,5 +144,6 @@ To obtain a Summer 2017 Internship in Software Engineering.
 \cvline{Texas A\&M President's Endowed Scholar}{(2014 - 2018)}
 \cvline{HackDFW}{(2016) Won Ilumi SmartBulb prize by developing Android app which provided light therapy for different medical conditions by automatically controlling light color and intensity.}
 {# \cvline{Math Fest}{(2015) Selected by honors faculty to attend national math conference.}\cvline{Capital One Summit for Developing  Leaders}{(2015)} #}
+
 
 \end{document}

@@ -15,6 +15,10 @@ def today():
     d = date.fromtimestamp(time.time())
     return d.isoformat()
 
+def get_about():
+    f = open("data/about.json")
+    return json.load(f)
+
 def get_skills():
     f = open("data/skills.json")
     return json.load(f)
@@ -40,7 +44,8 @@ skills = get_skills()
 resume_template = latex_jinja_env.get_template('resume.template.tex')
 resume_str = resume_template.render(
     languages = skills['languages'], 
-    software = skills['software'], 
+    software = skills['software'],
+    about = get_about(),
     today = today
 )
 with open("resume.tex", "w+") as f:
@@ -50,7 +55,8 @@ print("resume.tex written.")
 cv_template = latex_jinja_env.get_template('cv.template.tex')
 cv_str = cv_template.render(
     languages = skills['languages'], 
-    software = skills['software'], 
+    software = skills['software'],
+    about = get_about(),
     today = today
 )
 with open("cv.tex", "w+") as f:

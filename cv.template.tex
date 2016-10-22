@@ -10,14 +10,14 @@
 {#List of themes: http://tex.stackexchange.com/a/44222/89290#}
 \moderncvtheme[black]{banking}
 
-\firstname{Matt}
-\familyname{Gaikema}
-\address{22619 Arbor Stream Dr}{77450 Katy, Tx}
-\mobile{(832)-683-9857}
-\email{mgaikema1@gmail.com}
-\homepage{www.mattgaikema.com}
-\social[github]{TexAgg}
-\social[linkedin]{matthew-gaikema}
+\firstname{\VAR{about['name']['firstname']}}
+\familyname{\VAR{about['name']['familyname']}}
+\address{\VAR{about['address']['street']}}{\VAR{['address']['city']}}
+\mobile{\VAR{about['mobile']}}
+\email{\VAR{about['email']}}
+\homepage{\VAR{about['homepage']}}
+\social[github]{\VAR{about['github']['profile']}}
+\social[linkedin]{\VAR{about['linkedin']['profile']}}
 
 \begin{document}
 \makecvtitle
@@ -159,5 +159,6 @@
 \section{Conferences}
 
 \cvline{Math Fest}{(2015) One of two students selected by honors faculty to attend national math conference.}
+
 
 \end{document}

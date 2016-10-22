@@ -1,0 +1,21 @@
+{
+	"name": {
+		"firstname": "Matt",
+		"familyname": "Gaikema"
+	},
+	"address": {
+		"street": "22619 Arbor Stream Dr",
+		"city": "77450 Katy, Tx"
+	},
+	"mobile": "(832)-683-9857",
+	"email": "mgaikema1@gmail.com",
+	"website": "www.mattgaikema.com",
+	"github": {
+		"profile": "TexAgg",
+		"url": "https://github.com/TexAgg"
+	},
+	"linkedin": {
+		"profile": "matthew-gaikema",
+		"url": "https://www.linkedin.com/in/matthew-gaikema"
+	}
+}
