@@ -7,8 +7,9 @@
 
 \documentclass[10pt,a4paper]{moderncv}
 \usepackage[utf8]{inputenc}
-{#List of themes: http://tex.stackexchange.com/a/44222/89290#}
-\moderncvtheme[black]{banking}
+\usepackage{multicol}
+{# List of themes: http://tex.stackexchange.com/a/44222/89290 #}
+\moderncvtheme[black]{casual}
 
 \firstname{\VAR{about['name']['firstname']}}
 \familyname{\VAR{about['name']['familyname']}}
@@ -34,11 +35,13 @@
 {3.75/4.0}
 {University Honors Fellow}
 \cvitem{Courses}{
+    \begin{multicols}{2}
     \begin{itemize}
     \BLOCK{for course in courses}
         \item \VAR{course['number']}: \VAR{course['title']}
     \BLOCK{ endfor }
     \end{itemize}
+    \end{multicols}
 }
 
 
@@ -49,7 +52,7 @@
 \section{Computer Skills}
 \cvitem{Languages}{\VAR{", ".join(languages)}}
 \cvitem{Software}{\VAR{", ".join(software)}}
-\cvline{Passed Actuarial Exam P}{Scored 6/10}
+{# \cvline{Passed Actuarial Exam P}{Scored 6/10} #}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%
