@@ -46,7 +46,11 @@ cv: $(CV).pdf cv_png
 
 # Create the cv.pdf
 $(CV).pdf: $(CV).tex
-	pdflatex $(CV).tex
+	pdflatex $(CV)
+	pdflatex $(CV)
+	bibtex $(CV)
+	pdflatex $(CV)
+	pdflatex $(CV)
 
 .PHONY: cv_png
 # Make the cv png.
@@ -66,4 +70,4 @@ view_cv: $(CV).pdf
 .PHONY: clean
 # Remove output files.
 clean:
-	rm -rf *.aux *.out *.log $(CV)-*.png *.pyc
+	rm -rf *.aux *.out *.log $(CV)-*.png *.pyc *.blg *.bcf *.bbl
