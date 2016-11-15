@@ -1,6 +1,6 @@
 RESUME=resume
 CV=cv
-DATA=data/skills.json
+DATA=data/*
 
 # Make everything.
 .PHONY: all
