@@ -13,7 +13,7 @@
 	},
 	{
 		"number": "Math 323",
-		"title": "Linear Algebra"
+		"title": "(Honors) Linear Algebra"
 	},
 	{
 		"number": "CSCE 312",
@@ -21,7 +21,7 @@
 	},
 	{
 		"number": "CSCE 314",
-		"title": "Programming Languages"
+		"title": "(Honors) Programming Languages"
 	},
 	{
 		"number": "Math 409",
@@ -33,7 +33,7 @@
 	},
 	{
 		"number": "Math 415\\&416",
-		"title": "Modern Algebra I\\&II"
+		"title": "(Honors) Modern Algebra I\\&II"
 	},
 	{
 		"number": "Math 407",
@@ -49,6 +49,6 @@
 	},
 	{
 		"number": "Math 470",
-		"title": "Cryptography"
+		"title": "(Honors) Cryptography"
 	}
 ]
