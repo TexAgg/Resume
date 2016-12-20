@@ -44,13 +44,15 @@ latex_jinja_env = jinja2.Environment(
 
 # Get my skills.
 skills = get_skills()
+gpa = 3.8
 
 resume_template = latex_jinja_env.get_template('templates/resume.template.tex')
 resume_str = resume_template.render(
     languages = skills['languages'], 
     software = skills['software'],
     about = get_about(),
-    today = today
+    today = today,
+    gpa = gpa
 )
 with open("resume.tex", "w+") as f:
     f.write(resume_str)
@@ -62,7 +64,8 @@ cv_str = cv_template.render(
     software = skills['software'],
     about = get_about(),
     courses = get_courses(),
-    today = today
+    today = today,
+    gpa = gpa
 )
 with open("cv.tex", "w+") as f:
     f.write(cv_str)
