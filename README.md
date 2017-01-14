@@ -15,3 +15,6 @@ Run
 make
 ```
 to make all the targets.
+
+## Other resources
+[This website](https://www.pdftoword.com/) can convert a pdf to word, in case a plaintext version is needed (running Pandoc produces an empty file).
