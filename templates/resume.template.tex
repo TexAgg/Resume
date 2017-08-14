@@ -4,12 +4,12 @@
 \documentclass[10pt,a4paper]{moderncv}
 \usepackage[utf8]{inputenc}
 {# 
-http://tex.stackexchange.com/a/39030/89290
-http://tex.stackexchange.com/a/68797/89290 
+http://bit.ly/2vVIrJr
+http://bit.ly/2vxVWhn 
 #}
 \usepackage[scale=0.75, top=2cm, left=2cm, right=2cm, bottom=2cm, bmargin=1cm, footnotesep=1cm]{geometry}
 \moderncvtheme[black]{banking}
-{# http://tex.stackexchange.com/a/191768/89290 #}
+{# http://bit.ly/2w4unxZ #}
 \nopagenumbers
 
 \firstname{\VAR{about['name']['firstname']}}
@@ -22,8 +22,8 @@ http://tex.stackexchange.com/a/68797/89290
 \social[linkedin]{\VAR{about['linkedin']['profile']}}
 
 % PDF metadata
-% http://tex.stackexchange.com/q/26529/89290
-% http://tex.stackexchange.com/a/79406/89290
+% http://bit.ly/2uVI39j
+% http://bit.ly/2wJJud5
 \AfterPreamble{\hypersetup{
   pdfauthor={Matt Gaikema},
   pdftitle={Matt Gaikema Resume},
@@ -56,7 +56,7 @@ http://tex.stackexchange.com/a/68797/89290
 %%%%%%%%%%
 
 \section{Skills}
-{# http://tex.stackexchange.com/questions/95045/how-to-prevent-breaklines-inside-cvcomputer-in-moderncv #}
+{# http://bit.ly/2w4q7ys #}
 \cvitem{Languages}{\VAR{", ".join(languages)}}
 \cvitem{Software}{\VAR{", ".join(software)}}
 
@@ -70,6 +70,10 @@ http://tex.stackexchange.com/a/68797/89290
 \section{Work Experience}
 
 \cventry{Summer 2017}{Software Engineering Intern}{WePay}{California}{}{
+    \begin{itemize}
+        \item Create and modify several REST APIs (using Dropwizard and Flask) and Angular interfaces to interact with them.
+        \item Create an Angular interface to visualize transaction states on a graph.
+    \end{itemize}
 }
 
 \cventry{2016 - 2017}{Peer Teacher}{Department of Computer Science}{Texas A\&M University}{}{

@@ -1,14 +1,14 @@
 # Resume
 My resume and cv, written in LaTeX.
-Uses the [moderncv](https://vic.demuzere.be/articles/curriculum-vitae-cv-with-latex-moderncv/) template,
-and Python with [Jinja2](http://jinja.pocoo.org/docs/dev/) for templating.
+Uses the [moderncv](http://bit.ly/2vVHgd3) template,
+and Python with [Jinja2](http://bit.ly/2vVWsGX) for templating.
 
 ---
 
 ## Building
-Requires [GNU Make](https://www.gnu.org/software/make/), poppler-utils,
+Requires [GNU Make](http://bit.ly/2vCHSl4), poppler-utils,
 ImageMagick, Python 2, and
-[pdfLaTeX](http://tex.stackexchange.com/questions/49569/where-to-download-pdflatex-exe).
+[pdfLaTeX](http://bit.ly/2uHTJgH).
 
 Run 
 ```
@@ -17,4 +17,4 @@ make
 to make all the targets.
 
 ## Other resources
-[This website](https://www.pdftoword.com/) can convert a pdf to word, in case a plaintext version is needed (running Pandoc produces an empty file).
+[This website](http://bit.ly/2w4evvf) can convert a pdf to word, in case a plaintext version is needed (running Pandoc produces an empty file).
